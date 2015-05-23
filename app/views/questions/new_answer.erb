@@ -1,0 +1,7 @@
+<h1>New Answers for today</h1>
+
+<form action= <%="/users/#{@user_id}/answers"%> method="post">
+  <%= erb :"questions/_ask_all" %>
+  <br><br>
+  <input type="submit" value="Submit Answers">
+</form>

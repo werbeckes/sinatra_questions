@@ -1,0 +1,5 @@
+<div id="question-list">
+  <% questions.each do |question| %>
+    <%= erb :"questions/_display_one", locals: {question: question} %>
+  <% end %>
+</div>

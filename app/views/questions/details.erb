@@ -1,0 +1,11 @@
+<h1>Question details</h1>
+
+<h3>Question: <%= @question.text %></h3>
+
+<a href= <%="/users/#{@user_id}/questions/#{@question.id}/edit"%> >Edit/delete question</a>
+
+<h3>Here are all of the answers to this question</h3>
+
+<%= erb :"questions/_display_all_answers" %>
+
+<a href="/home">Back to my profile</a>

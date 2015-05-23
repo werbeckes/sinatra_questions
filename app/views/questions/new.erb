@@ -1,0 +1,7 @@
+<h1>What should we ask you everyday?</h1>
+
+<form action= <%="/users/#{@user_id}/questions"%> method="post">
+  <input type="hidden" name="question[user_id]" value= <%= @user_id %> >
+  <input type="text" name="question[text]" placeholder="What should we ask you every day">
+  <input type="submit" value="Add this question">
+</form>
