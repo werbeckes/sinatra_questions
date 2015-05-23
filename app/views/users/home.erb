@@ -1,0 +1,7 @@
+<h1>This is your home page</h1>
+
+<%= erb :"questions/_display_all", locals: { questions: @questions } %>
+
+<h4><a href= <%="/users/#{@user.id}/questions/new"%> >Add a question</a></h4>
+<br>
+<h4><a href= <%="/users/#{@user.id}/new_answers"%> >Answer your questions</a></h4>

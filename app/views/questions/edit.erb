@@ -1,0 +1,13 @@
+<h1>Question Edit</h1>
+<form action= "<%= "/users/#{@user_id}/questions/#{@question.id}" %>" method="post">
+  <input type="hidden" name="_method" value="put">
+  <input type="text" name="question" value="<%= @question.text %>">
+  <input type="submit" value="Update">
+</form><br><br>
+
+<form action= "<%= "/users/#{@user_id}/questions/#{@question.id}" %>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <input type="submit" value="Delete this question">
+</form>
+
+

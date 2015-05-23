@@ -1,0 +1,5 @@
+
+<% @questions.each do |question| %>
+  <h4><%= question.text %></h4>
+  <input type="text" name= <%="answers[#{question.id}]"%> >
+<% end %>

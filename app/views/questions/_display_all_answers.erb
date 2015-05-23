@@ -1,0 +1,8 @@
+<table class="table">
+  <th>Answer</th>
+  <th>Date</th>
+  <th>Time</th>
+  <% @answers.each do |answer| %>
+    <%= erb :"questions/_display_one_answer", locals: {answer: answer} %>
+  <% end %>
+</table>
